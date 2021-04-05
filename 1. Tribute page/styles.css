@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Syne+Tactile&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&family=Syne+Tactile&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lora&family=Montserrat:wght@700&family=Syne+Tactile&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cousine:wght@700&family=Dancing+Script:wght@500&family=Lora&family=Montserrat:wght@700&family=Syne+Tactile&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+}
+
+#title {
+  background: linear-gradient(180deg, #001745, white);
+  /* border: solid transparent; */
+  height: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 10vw;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 4em;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+  text-shadow: 4px 3px 5px white;
+}
+
+.luna {
+  position: absolute;
+  /*     margin: auto; */
+  top: 34%;
+  right: 0;
+  bottom: 0;
+  left: 45%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 30px 10px 15px 10px #ffca00;
+  z-index: 0;
+  transform: rotate(10deg);
+}
+
+hr {
+} /*Cómo putas hago pa meterla debajo de la luna*/
+
+#img-div {
+  background: #ffca00;
+
+  /* background: linear-gradient(180deg, white, #001745); */
+  height: 100%;
+}
+
+#image {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5%;
+  position: relative;
+  right: 75%;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 5%; */
+  /* margin-bottom: 1%; */
+  /* max-width: 2560px;*/
+  height: 100%;
+}
+
+#img-caption {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  /* margin-bottom: 5%; */
+  padding-top: 1%;
+  color: white;
+}
+
+strong {
+  font-style: italic;
+}
+
+.cuerpo {
+  background: linear-gradient(225deg, white, rgba(0, 23, 69, 0.7));
+}
+
+ul {
+  margin: 0px 28%;
+}
+
+li {
+  font-family: Lora;
+  font-size: 20px;
+  /*   background: #cce5ff; */
+  margin: 3%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#Frase-celebre {
+  text-align: center;
+  font-family: "Dancing Script";
+  font-size: 50%;
+  border: solid;
+  width: 30%;
+  margin: 0 auto;
+  background: #fadcc5;
+}
+
+.img-galeria {
+  width: 25%;
+  vertical-align: middle;
+  margin: 3%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#link {
+  text-align: center;
+  font-family: Cousine;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
