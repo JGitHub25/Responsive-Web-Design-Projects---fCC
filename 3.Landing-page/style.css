@@ -1,0 +1,70 @@
+html {
+    --outline: 1px dotted rgba(255, 0, 0, 0.5);
+    --outline: 0px;
+}
+
+* {
+    outline: var(--outline);
+}
+
+
+:root {
+    --cols: 1fr 5rem minmax(0, 50rem) 5rem 1fr;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(217, 179, 236);
+}
+
+#header-img {
+    width: 100px;
+}
+
+.nav-link {
+    text-decoration: none;
+
+}
+
+body {
+    background-color: chartreuse
+}
+
+/* main {
+    display: grid;
+    grid-template-columns: var(--cols);
+    grid-template-rows: 100vh 1fr auto;
+} */
+
+main section {
+    height: 400px;
+}
+
+#features {
+    background-color: aqua;
+    grid-column: 3/-3;
+}
+
+.individual-feature-container {
+    display: flex;
+    align-items: center;
+
+}
+
+#specs {
+    background-color: brown;
+}
+
+#versions {
+    background-color: yellow;
+}
+
+.specs-table * {
+    border: 1px solid white;
+}
+
+#sample-images {
+    background-color: coral;
+}
