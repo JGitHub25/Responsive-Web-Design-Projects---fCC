@@ -1,92 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
+    />
+
     <title>Landing Page</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <div class="image-container"><img src="./Panasonic_logo_(Blue).svg.png" alt="Panasonic logo" id="header-img">
-        </div>
-        <nav id="nav-bar">
-            <a href="features" class="nav-link">Features</a>
-            <a href="specs" class="nav-link">Specs</a>
-            <a href="versions" class="nav-link">Versions</a>
-            <a href="sample-images" class="nav-link">Sample images</a></nav>
+      <div class="image-container">
+        <img
+          src="./Panasonic_logo_(Blue).svg.png"
+          alt="Panasonic logo"
+          id="header-img"
+        />
+      </div>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#specs" class="nav-link">Specs</a>
+        <a href="#versions" class="nav-link">Versions</a>
+        <a href="#sample-images" class="nav-link">Sample images</a>
+      </nav>
     </header>
 
     <main class="main">
-        <div class="video-container"><iframe src="https://youtu.be/TMxSOZDnQaU" frameborder="0" id="video"></iframe>
-        </div>
-        <section id="features">
-            <h2 class="section-name">Features</h2>
-            <div class="features-list">
-                <div class="individual-feature-container">
-                    <span class="fa fa-car"></span>
-                    <div class="feature-text">
-                        <h3 class="feature-title">Título feature</h3>
-                        <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
-                            animi, ullam earum voluptatibus beatae eligendi quisquam nihil illum assumenda dolor.</p>
-                    </div>
-                </div>
-                <div class="individual-feature-container">
-                    <span class="fa fa-car"></span>
-                    <div class="feature-text">
-                        <h3 class="feature-title">Título feature</h3>
-                        <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
-                            animi, ullam earum voluptatibus beatae eligendi quisquam nihil illum assumenda dolor.</p>
-                    </div>
-                </div>
-                <div class="individual-feature-container">
-                    <span class="fa fa-car"></span>
-                    <div class="feature-text">
-                        <h3 class="feature-title">Título feature</h3>
-                        <p class="feature-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
-                            animi, ullam earum voluptatibus beatae eligendi quisquam nihil illum assumenda dolor.</p>
-                    </div>
-                </div>
+      <div class="video-container">
+        <iframe
+          id="video"
+          src="https://www.youtube-nocookie.com/embed/TMxSOZDnQaU?controls=0&rel=0&mute=1&modestbranding=1&autohide=1&showinfo=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <section id="features">
+        <h2 class="section-name">Features</h2>
+        <div class="features-list">
+          <div class="individual-feature-container">
+            <span class="fa fa-image"></span>
+            <div class="feature-text">
+              <h3 class="feature-title">Outstanding image quality</h3>
+              <p class="feature-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                animi, ullam earum voluptatibus beatae eligendi quisquam nihil
+                illum assumenda dolor.
+              </p>
             </div>
-        </section>
-        <section id="specs">
-            <h2 class="section-name">Specs</h2>
-            <table class="specs-table">
-                <tr>
-                    <th>Sensor</th>
-                    <td>M4/3</td>
-                </tr>
-                <tr>
-                    <th>Sensor</th>
-                    <td>M4/3</td>
-                </tr>
-                <tr>
-                    <th>Sensor</th>
-                    <td>M4/3</td>
-                </tr>
-                <tr>
-                    <th>Sensor</th>
-                    <td>M4/3</td>
-                </tr>
-            </table>
-        </section>
-        <section id="versions">
-            <h2 class="section-name">Versions</h2>
-        </section>
-        <section id="sample-images">
-            <h2 class="section-name">Samples images</h2>
-        </section>
+          </div>
+          <div class="individual-feature-container">
+            <span class="fas fa-film"></span>
+            <div class="feature-text">
+              <h3 class="feature-title">
+                Awesome for photo and a beast for video
+              </h3>
+              <p class="feature-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                animi, ullam earum voluptatibus beatae eligendi quisquam nihil
+                illum assumenda dolor.
+              </p>
+            </div>
+          </div>
+          <div class="individual-feature-container">
+            <span class="fa fa-camera"></span>
+            <div class="feature-text">
+              <h3 class="feature-title">Customizable</h3>
+              <p class="feature-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                animi, ullam earum voluptatibus beatae eligendi quisquam nihil
+                illum assumenda dolor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="specs">
+        <h2 class="section-name">Specs</h2>
+        <table class="specs-table">
+          <caption>
+            GH5 specifications
+          </caption>
+          <tr>
+            <th>Sensor</th>
+            <td>M4/3</td>
+          </tr>
+          <tr>
+            <th>Resolution</th>
+            <td>20.1 megapixels</td>
+          </tr>
+          <tr>
+            <th>Video recording <span>(max.)</span></th>
+            <td>4K 60fps (external)</td>
+          </tr>
+          <tr>
+            <th>Weight</th>
+            <td>725 g</td>
+          </tr>
+        </table>
+      </section>
+      <section id="versions">
+        <h2 class="section-name">Versions</h2>
+        <div class="versions-container">
+          <div class="version-card">
+            <div class="card-name">
+              <h3>GH5</h3>
+            </div>
+            <img
+              src="https://i.linio.com/p/4ad73dbbaaa092ab5b2cbabd53dc226f-product.jpg"
+              alt="GH5"
+            />
+            <p>A modern classic.</p>
+            <button>Learn more</button>
+          </div>
+          <div class="version-card">
+            <div class="card-name">
+              <h3>GH5S</h3>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/71j4E2oAuLL._AC_SS450_.jpg"
+              alt="GH5S"
+            />
+            <p>Even more video oriented.</p>
+            <button>Learn more</button>
+          </div>
+          <div class="version-card">
+            <div class="card-name">
+              <h3>GH5 II</h3>
+            </div>
+            <img
+              src="https://i.blogs.es/6c0c13/panasonic-lumix-gh5-ii-1-/1366_2000.jpg"
+              alt="GH5 II"
+            />
+            <p>The new version.</p>
+            <button>Learn more</button>
+          </div>
+        </div>
+      </section>
+      <section id="sample-images">
+        <h2 class="section-name">Samples images</h2>
+        <div class="slider-container">
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=1);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=2);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=3);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=4);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=5);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=6);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=7);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=8);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=9);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(https://picsum.photos/300/300?grayscale&random=10);
+            "
+          ></div>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button type="button" class="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+      <section id="form">
         <form action="" id="form">
-            <h4 class="form-hint">Recibe mi libro de apuntes sobre cómo manejar tu GH5.</h4><input type="email"
-                id="email" placeholder="Ingresa tu correo"><input type="submit" id="submit" value="Enviar">
+          <h4 class="form-hint">
+            Recibe mi libro de apuntes sobre cómo manejar tu GH5.
+          </h4>
+          <i class="far fa-envelope"></i>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          /><input type="submit" id="submit" value="Enviar" />
         </form>
-
+      </section>
     </main>
-</body>
-
+    <footer></footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
