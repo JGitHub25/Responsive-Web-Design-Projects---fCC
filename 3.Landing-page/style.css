@@ -84,17 +84,16 @@ main {
   display: grid;
   grid-template-columns: var(--cols);
   grid-template-rows: 80vh repeat(4, 1fr);
-  background: #e4f3ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #eef2f3,
-    #e4f3ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #eef2f3,
-    #e4f3ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #e4f3ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #eef2f3,
+      #e4f3ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #eef2f3,
+      #e4f3ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .video-container {
@@ -174,6 +173,7 @@ section {
 .specs-table tr:nth-child(even) {
   background-color: #eee;
 }
+
 .specs-table tr:nth-child(odd) {
   background-color: #fff;
 }
@@ -347,4 +347,103 @@ footer {
   opacity: 0.8;
   background-image: linear-gradient(0deg, #e5e5f7 50%, #0056a8 50%);
   background-size: 10px 10px;
+}
+
+
+
+
+/* ==============================MEDIA QUESRIES ============================= */
+
+@media screen and (max-width: 800px) {
+
+  .main {
+    grid-template-rows: auto;
+  }
+
+  .video-container {
+    aspect-ratio: 16/9;
+  }
+
+  .nav-link {
+
+    font-size: 16px;
+
+  }
+
+  #header-img {
+    width: 120px;
+  }
+
+  #features {
+    grid-column: 3/-3;
+
+  }
+
+  .feature-title {
+
+    font-size: 16px;
+    padding-bottom: 10px;
+
+  }
+
+  .feature-description {
+    font-size: 14px;
+
+  }
+
+  .specs-table {
+    width: 40%;
+  }
+
+  .specs-table th {
+    font-size: 15px;
+
+  }
+
+  .specs-table td {
+    font-size: 13px;
+
+  }
+
+  #versions {
+    grid-column: 3/-3;
+
+  }
+
+  .version-card {
+    width: 30%;
+
+  }
+
+  .version-card img {
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .version-card p {
+
+    font-size: 12px;
+  }
+
+  .version-card .card-name {
+
+    font-size: 16px;
+
+  }
+
+  .version-card button,
+  #submit {
+
+    font-size: 10px;
+
+  }
+
+  .slider-container {
+
+    height: 20vh;
+    width: 70vw;
+
+  }
+
 }
