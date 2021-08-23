@@ -15,11 +15,16 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
     />
-
     <title>Landing Page</title>
   </head>
 
   <body>
+    <nav id="mobile-overlay" class="mobile-overlay">
+      <a href="#features" class="nav-link-m">Features</a>
+      <a href="#specs" class="nav-link-m">Specs</a>
+      <a href="#versions" class="nav-link-m">Versions</a>
+      <a href="#sample-images" class="nav-link-m">Sample images</a>
+    </nav>
     <header id="header">
       <div class="image-container">
         <img
@@ -34,6 +39,11 @@
         <a href="#versions" class="nav-link">Versions</a>
         <a href="#sample-images" class="nav-link">Sample images</a>
       </nav>
+      <div class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </header>
 
     <main class="main">
@@ -222,8 +232,8 @@
           </button>
         </div>
       </section>
-      <section id="form">
-        <form action="" id="form">
+      <section class="form">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
           <h4 class="form-hint">
             Recibe mi libro de apuntes sobre cómo manejar tu GH5.
           </h4>
@@ -231,6 +241,7 @@
           <input
             type="email"
             id="email"
+            name="email"
             placeholder="Enter your email"
             required
           /><input type="submit" id="submit" value="Enviar" />

@@ -31,3 +31,23 @@ function carousel() {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 }
+
+//Mobile Menu
+let linksMobile = document.querySelectorAll(".nav-link-m");
+let x = document.querySelector(".container");
+
+function myFunction() {
+  x.classList.toggle("change");
+  document.getElementById("mobile-overlay").classList.toggle("change");
+  linksMobile.forEach((link) => {
+    link.classList.toggle("change");
+  });
+}
+
+x.addEventListener("click", myFunction);
+
+linksMobile.forEach((link) => {
+  link.addEventListener("click", () => {
+    myFunction();
+  });
+});
