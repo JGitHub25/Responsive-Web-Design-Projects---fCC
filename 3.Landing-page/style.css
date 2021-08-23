@@ -80,19 +80,88 @@ html {
   color: var(--color2-3);
 }
 
+.mobile-overlay {
+  width: 0;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 86, 168, 1) 0%,
+    rgba(0, 27, 53, 1) 35%,
+    rgba(0, 47, 91, 1) 100%
+  );
+  transition: all ease-in-out 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mobile-overlay.change {
+  width: 100vw;
+}
+
+.nav-link-m {
+  display: block;
+  text-decoration: none;
+  font-family: var(--font-2);
+  font-weight: 600;
+  color: var(--color2-1);
+  font-size: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.nav-link-m.change {
+  font-size: 30px;
+}
+
+.container {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  align-self: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-1);
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 main {
   display: grid;
   grid-template-columns: var(--cols);
   grid-template-rows: 80vh repeat(4, 1fr);
   background: #e4f3ff;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,
-      #eef2f3,
-      #e4f3ff);
+  background: -webkit-linear-gradient(to right, #eef2f3, #e4f3ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,
-      #eef2f3,
-      #e4f3ff);
+  background: linear-gradient(to right, #eef2f3, #e4f3ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -149,6 +218,10 @@ section {
   font-size: 18px;
   font-weight: 700;
   color: var(--black);
+}
+
+.feature-description {
+  font-family: var(--font-2);
 }
 
 #specs {
@@ -258,6 +331,7 @@ td {
   padding: 5px 15px;
   color: white;
   transition: all ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 .version-card button:hover,
@@ -309,12 +383,21 @@ td {
   padding: 5px 15px;
   color: white;
   transition: all ease-in-out 0.2s;
+  cursor: pointer;
 }
 
-#form {
+.form {
   grid-column: 3/-3;
   grid-row: 6/7;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  gap: 10px;
+}
+
+#form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,13 +432,9 @@ footer {
   background-size: 10px 10px;
 }
 
-
-
-
-/* ==============================MEDIA QUESRIES ============================= */
+/* ==============================MEDIA QUERIES ============================= */
 
 @media screen and (max-width: 800px) {
-
   .main {
     grid-template-rows: auto;
   }
@@ -365,9 +444,7 @@ footer {
   }
 
   .nav-link {
-
     font-size: 16px;
-
   }
 
   #header-img {
@@ -376,19 +453,15 @@ footer {
 
   #features {
     grid-column: 3/-3;
-
   }
 
   .feature-title {
-
     font-size: 16px;
     padding-bottom: 10px;
-
   }
 
   .feature-description {
     font-size: 14px;
-
   }
 
   .specs-table {
@@ -397,53 +470,152 @@ footer {
 
   .specs-table th {
     font-size: 15px;
-
   }
 
   .specs-table td {
     font-size: 13px;
-
   }
 
   #versions {
     grid-column: 3/-3;
-
   }
 
   .version-card {
     width: 30%;
-
   }
 
   .version-card img {
     width: 80px;
     height: 80px;
-
   }
 
   .version-card p {
-
     font-size: 12px;
   }
 
   .version-card .card-name {
-
     font-size: 16px;
-
   }
 
   .version-card button,
   #submit {
-
     font-size: 10px;
-
   }
 
   .slider-container {
-
     height: 20vh;
     width: 70vw;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  #header {
+    height: 70px;
   }
 
+  #header-img {
+    width: 100px;
+  }
+
+  .section-name {
+    font-size: 24px;
+  }
+
+  .feature-title {
+    font-size: 16px;
+  }
+
+  .individual-feature-container span {
+    font-size: 40px;
+  }
+
+  .version-card p {
+    font-size: 10px;
+  }
+
+  #-section h4 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    height: 50px;
+    padding: 0 20px;
+  }
+
+  #header-img {
+    width: 70px;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .video-container {
+    padding: 0;
+  }
+
+  #features {
+    grid-column: 1/-1;
+    padding: 0 6px;
+  }
+
+  .section-name {
+    font-size: 20px;
+  }
+
+  .feature-title {
+    font-size: 14px;
+  }
+
+  .feature-description {
+    font-size: 12px;
+  }
+
+  .individual-feature-container span {
+    font-size: 30px;
+  }
+
+  .specs-table caption {
+    font-size: 14px;
+  }
+
+  .specs-table th {
+    font-size: 12px;
+  }
+
+  .specs-table td {
+    font-size: 11px;
+  }
+
+  #versions {
+    grid-column: 1/-1;
+  }
+
+  #versions .section-name {
+    padding-left: 5px;
+  }
+
+  .slider-container {
+    height: 30vh;
+    width: 90vw;
+  }
+
+  .btn-container button {
+    font-size: 10px;
+  }
+
+  #form h4 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  #email {
+    width: 70%;
+  }
 }
