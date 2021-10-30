@@ -67,3 +67,46 @@ header {
   padding-bottom: 10px;
   color: darkslategray;
 }
+
+code {
+  background-color: #eee;
+  border-radius: 3px;
+  font-family: courier, monospace;
+  padding: 0 3px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    width: 28vw;
+  }
+
+  .navbar header {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .main-section header {
+    font-size: 17px;
+  }
+
+  .main-section p {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  code {
+    font-size: 13px;
+  }
+
+  .list li {
+    font-size: 12px;
+  }
+
+  .content-container {
+    overflow: hidden;
+  }
+}

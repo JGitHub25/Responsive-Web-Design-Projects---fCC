@@ -1,4 +1,3 @@
-
 html,
 body,
 div,
@@ -122,4 +121,12 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  --outline: 1px dotted rgba(255, 0, 0, 0.5);
+  --outline: 0px;
+}
+* {
+  outline: var(--outline);
 }
